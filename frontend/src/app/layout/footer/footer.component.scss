@@ -1,0 +1,49 @@
+@use "../../../styles/styles-global.scss" as s;
+
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: s.$dark-bg-color;
+  color: s.$grey-color;
+  &__title {
+    color: s.$acento;
+    font-weight: bold;
+  }
+  &__info {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    &--logoContainer {
+      width: 60px;
+    }
+    &--logo {
+      width: 100%;
+    }
+    &--logoText {
+      font-size: 10px;
+      width: 80px;
+    }
+  }
+}
+.store {
+  &__list {
+    &--item {
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        color: s.$acento;
+      }
+    }
+  }
+}
+.access {
+  display: flex;
+  flex-direction: column;
+  &__link {
+    cursor: pointer;
+    &:hover {
+      color: s.$acento;
+    }
+  }
+}
